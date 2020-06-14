@@ -21,7 +21,7 @@
             <i class="fas fa-server"></i>
             <a href="#">Hong</a>
         </div>
-        <div>
+        <div class="navbar__menu">
             <ul class="navbar__menu">
                 <li class="navbar__menu__item active">Home</li>
                 <li class="navbar__menu__item">About</li>
@@ -32,6 +32,12 @@
             </ul>
         </div>
     </nav>
+
+    <!-- Toggle Button -->
+    <button class="navbar__toggle-btn">
+        <i class="fas fa-bars"></i>
+    </button>
+
     <!-- Home -->
     <section id="home">
         <img src="images/KakaoTalk_20200106_193300638.jpg" alt="hong's profile photo" class="home_avator">
@@ -97,7 +103,8 @@
             <h2>Skills & Attributes</h2>
             <p>Experience with all phases of the software life-cycle. Passion for learning new technologies. Capable of
                 working within
-                a team environment and independently. Ability to plan and time schedule, work under strict time pressure and
+                a team environment and independently. Ability to plan and time schedule, work under strict time pressure
+                and
                 adapt
                 quickly when needed.
             </p>
@@ -159,7 +166,7 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="skillset__right">
                     <div class="tools">
                         <h3 class="skillset__title">Tools</h3>
@@ -179,101 +186,103 @@
                             <li><span>My sql</span></li>
                         </ul>
                     </div>
-    
+
                 </div>
-    
+
             </div>
         </div>
-        
+
     </section>
     <!-- Work -->
     <section id="work" class="section">
         <div class="section__container">
             <h1>My Work</h1>
-        <h3>Project</h3>
-        <div class="work__categories">
-            <button class="category__btn">All<span class="category__count">8</span> </button>
-            <button class="category__btn">Front-end<span class="category__count">3</span> </button>
-            <button class="category__btn">Back-end<span class="category__count">3</span> </button>
-            <button class="category__btn">Moblie<span class="category__count">2</span> </button>
-        </div>
+            <h3>Project</h3>
+            <div class="work__categories">
+                <button class="category__btn">All<span class="category__count">8</span> </button>
+                <button class="category__btn">Front-end<span class="category__count">3</span> </button>
+                <button class="category__btn">Back-end<span class="category__count">3</span> </button>
+                <button class="category__btn">Moblie<span class="category__count">2</span> </button>
+            </div>
 
-        <div class="work__profects">
-            <a href="https://www.naver.com" class="project" target="blank">
-                <img src="./images/projects/clarisse-meyer-FQ96bh4O1tY-unsplash.jpg"
-                    alt="clarisse-meyer-FQ96bh4O1tY-unsplash" class="project__img">
-                <div class="project__description">
-                    <h3>Youtube Site</h3>
-                    <span>Clone coding with HTML and CSS</span>
-                </div>
-            </a>
-            <a href="https://www.naver.com" class="project" target="blank">
-                <img src="./images/projects/daniel-jensen-tQpypKA92k8-unsplash.jpg"
-                    alt="clarisse-meyer-FQ96bh4O1tY-unsplash" class="project__img">
-                <div class="project__description">
-                    <h3>Youtube Site</h3>
-                    <span>Clone coding with HTML and CSS</span>
-                </div>
-            </a>
-            <a href="https://www.naver.com" class="project" target="blank">
-                <img src="./images/projects/dariusz-sankowski-3OiYMgDKJ6k-unsplash.jpg"
-                    alt="clarisse-meyer-FQ96bh4O1tY-unsplash" class="project__img">
-                <div class="project__description">
-                    <h3>Youtube Site</h3>
-                    <span>Clone coding with HTML and CSS</span>
-                </div>
-            </a>
-            <a href="https://www.naver.com" class="project" target="blank">
-                <img src="./images/projects/dino-reichmuth-A5rCN8626Ck-unsplash.jpg"
-                    alt="clarisse-meyer-FQ96bh4O1tY-unsplash" class="project__img">
-                <div class="project__description">
-                    <h3>Youtube Site</h3>
-                    <span>Clone coding with HTML and CSS</span>
-                </div>
-            </a>
-            <a href="https://www.naver.com" class="project" target="blank">
-                <img src="./images/projects/jake-blucker-tMzCrBkM99Y-unsplash.jpg"
-                    alt="clarisse-meyer-FQ96bh4O1tY-unsplash" class="project__img">
-                <div class="project__description">
-                    <h3>Youtube Site</h3>
-                    <span>Clone coding with HTML and CSS</span>
-                </div>
-            </a>
-            <a href="https://www.naver.com" class="project" target="blank">
-                <img src="./images/projects/jeshoots-com-mSESwdMZr-A-unsplash.jpg"
-                    alt="clarisse-meyer-FQ96bh4O1tY-unsplash" class="project__img">
-                <div class="project__description">
-                    <h3>Youtube Site</h3>
-                    <span>Clone coding with HTML and CSS</span>
-                </div>
-            </a>
-        </div>
+            <div class="work__profects">
+                <a href="https://www.naver.com" class="project" target="blank">
+                    <img src="./images/projects/clarisse-meyer-FQ96bh4O1tY-unsplash.jpg"
+                        alt="clarisse-meyer-FQ96bh4O1tY-unsplash" class="project__img">
+                    <div class="project__description">
+                        <h3>Youtube Site</h3>
+                        <span>Clone coding with HTML and CSS</span>
+                    </div>
+                </a>
+                <a href="https://www.naver.com" class="project" target="blank">
+                    <img src="./images/projects/daniel-jensen-tQpypKA92k8-unsplash.jpg"
+                        alt="clarisse-meyer-FQ96bh4O1tY-unsplash" class="project__img">
+                    <div class="project__description">
+                        <h3>Youtube Site</h3>
+                        <span>Clone coding with HTML and CSS</span>
+                    </div>
+                </a>
+                <a href="https://www.naver.com" class="project" target="blank">
+                    <img src="./images/projects/dariusz-sankowski-3OiYMgDKJ6k-unsplash.jpg"
+                        alt="clarisse-meyer-FQ96bh4O1tY-unsplash" class="project__img">
+                    <div class="project__description">
+                        <h3>Youtube Site</h3>
+                        <span>Clone coding with HTML and CSS</span>
+                    </div>
+                </a>
+                <a href="https://www.naver.com" class="project" target="blank">
+                    <img src="./images/projects/dino-reichmuth-A5rCN8626Ck-unsplash.jpg"
+                        alt="clarisse-meyer-FQ96bh4O1tY-unsplash" class="project__img">
+                    <div class="project__description">
+                        <h3>Youtube Site</h3>
+                        <span>Clone coding with HTML and CSS</span>
+                    </div>
+                </a>
+                <a href="https://www.naver.com" class="project" target="blank">
+                    <img src="./images/projects/jake-blucker-tMzCrBkM99Y-unsplash.jpg"
+                        alt="clarisse-meyer-FQ96bh4O1tY-unsplash" class="project__img">
+                    <div class="project__description">
+                        <h3>Youtube Site</h3>
+                        <span>Clone coding with HTML and CSS</span>
+                    </div>
+                </a>
+                <a href="https://www.naver.com" class="project" target="blank">
+                    <img src="./images/projects/jeshoots-com-mSESwdMZr-A-unsplash.jpg"
+                        alt="clarisse-meyer-FQ96bh4O1tY-unsplash" class="project__img">
+                    <div class="project__description">
+                        <h3>Youtube Site</h3>
+                        <span>Clone coding with HTML and CSS</span>
+                    </div>
+                </a>
+            </div>
         </div>
     </section>
     <!-- Testmonials -->
     <section id="testmonials" class="section">
         <div class="section__container">
             <h1>Testimonials</h1>
-        <h3>See what they say about me</h3>
-        <div class="testimonials">
-            <div class="testimonial">
-                <img src="./images/testimonial/people face.jpg" alt="People" class="testimonial__avata">
-                <div class="testimonial__speech-buble">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est soluta rerum eligendi perferendis
-                        unde incidunt voluptate tempora dolore odit voluptatibus.</p>
-                    <p class="name"><a href="">Hong</a>/ Google</p>
+            <h3>See what they say about me</h3>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <img src="./images/testimonial/people face.jpg" alt="People" class="testimonial__avata">
+                    <div class="testimonial__speech-buble">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est soluta rerum eligendi
+                            perferendis
+                            unde incidunt voluptate tempora dolore odit voluptatibus.</p>
+                        <p class="name"><a href="">Hong</a>/ Google</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="testimonial">
-                <img src="./images/testimonial/people face.jpg" alt="People" class="testimonial__avata">
-                <div class="testimonial__speech-buble">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est soluta rerum eligendi perferendis
-                        unde incidunt voluptate tempora dolore odit voluptatibus.</p>
-                    <p class="name"><a href="">Hong</a>/ Google</p>
+                <div class="testimonial">
+                    <img src="./images/testimonial/people face.jpg" alt="People" class="testimonial__avata">
+                    <div class="testimonial__speech-buble">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est soluta rerum eligendi
+                            perferendis
+                            unde incidunt voluptate tempora dolore odit voluptatibus.</p>
+                        <p class="name"><a href="">Hong</a>/ Google</p>
+                    </div>
                 </div>
             </div>
-        </div>
         </div>
     </section>
     <!-- Contact -->
