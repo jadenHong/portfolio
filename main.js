@@ -26,7 +26,7 @@ navbarMenu.addEventListener('click',(event) =>{
     if(link == null){
         return;
     }
-    console.log(event.target.dataset.link);
+    // console.log(event.target.dataset.link);
     scrollIntoView(link);
 });
 
@@ -36,14 +36,33 @@ const homeContactBtn = document.querySelector('.home__contact');
 
 homeContactBtn.addEventListener('click', () =>{
 
-    const target = event.target;
+    /* const target = event.target;
     const link = target.dataset.link;
-    console.log(event.target.dataset.link);
+    console.log(event.target.dataset.link); */
     scrollIntoView('#contact');
 });
+
+
+/* Make home slowly fade to transparent as the window scrolls down */
+const home = document.querySelector('.home__container'); //class 가 home__container 인 테그를 지정
+const homeHeight = home.getBoundingClientRect().height; // home 의 높이를 측정할 수 있다.
+document.addEventListener('scroll',() =>{
+    // console.log(homeHeight);  //높이 확인
+    // console.log(1 - window.scrollY / homeHeight);  // 만약 homeHeight(고정값)가 800이면 window 를 y축으로 스크롤 할때마다 값이 변한다. 1 - window.scrollY / homeHeight 가 1이면 불투명 0에 가까울 수록 투명해진다.
+    home.style.opacity = 1 - window.scrollY / homeHeight;
+})
+
+
+
+
+
+
+
+
 
 
 function scrollIntoView(selector){
     const scrollTo = document.querySelector(selector);
     scrollTo.scrollIntoView({ behavior: 'smooth'});
 }
+
