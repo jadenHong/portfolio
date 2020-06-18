@@ -53,14 +53,31 @@ document.addEventListener('scroll',() =>{
 })
 
 
+/* Show "arrow up" button when scrolling down */
+const arrowUp = document.querySelector('.arrow-up');
+document.addEventListener('scroll', () => {
+    if(window.scrollY > homeHeight /2){
+        arrowUp.classList.add('visible');
+    }else{
+        arrowUp.classList.remove('visible');
+    }
+}) 
+
+/* Handle click on the "arrow up" button */
+
+arrowUp.addEventListener('click', () => {
+    /* const target = event.target;
+    console.log(target);
+    const link = target.dataset.link;
+    console.log(link);
+    scrollIntoView(link); */ // 이렇게 하면 i 아이콘인 에로우를 클릭하면 동작하지 않는다.
+    scrollIntoView('#home');
+
+})
 
 
 
-
-
-
-
-
+/* global function to using scroll action */
 function scrollIntoView(selector){
     const scrollTo = document.querySelector(selector);
     scrollTo.scrollIntoView({ behavior: 'smooth'});

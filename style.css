@@ -459,6 +459,30 @@ color: var(--color-white);
     transition: all var(--aimation-duration) ease-in;
 }
 
+/* Arrow up */
+.arrow-up{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 70px;
+    height: 70px;
+    font-size: 50px;
+    background-color: #333333;
+    color: var(--color-white);
+    border-radius: 50%;
+    opacity: 0;
+    pointer-events: none;
+    /* display: none; 이렇게 하면 완전 없어졋다가 나타나는 것이므로 transition 이 먹히지 않는다. */
+    transition: all 300ms ease-in;
+}
+
+.arrow-up.visible{
+    opacity: 1;
+    pointer-events: painted;
+    /* display: block;  display:non 으로 줬을 때 그냥 디스플레이 해주기 위해 설정한것 inline 써도 상관없는듯 */
+
+}
+
 /* For below 768px screen width */
 @media screen and (max-width: 768px){
     .navbar__toggle-btn{
