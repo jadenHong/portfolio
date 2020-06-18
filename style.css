@@ -97,6 +97,7 @@ h3 {
     color: var(--color-white);
     padding: 16px;
     transition: all var(--aimation-duration) ease-in-out;
+    z-index: 1;
 }
 #navbar.navbar--dark{
     background-color: #2e2929;
