@@ -178,7 +178,7 @@ h3 {
 }
 
 .section__container {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: auto;
 }
 
@@ -336,10 +336,17 @@ h3 {
     transition: all var(--aimation-duration) ease-in;
 }
 
-.work__profects{
+.work__projects{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    opacity: 1;
+    transition: all var(--aimation-duration) ease-out;
+}
+
+.work__projects.anim-out{
+    opacity: 0;
+    transform: scale(0.96) translateY(40px);
 }
 
 .project{
@@ -351,6 +358,10 @@ h3 {
     height: 250px;
     margin: 2px;
     background-color: var(--color-light-white);
+}
+
+.project.invisible{
+    display: none;
 }
 
 .project__img{
@@ -369,7 +380,7 @@ h3 {
     top: 0;
     left: 0;
     opacity: 0;
-    transform: translateY(10px);
+    transform: translateY(30px);
     transition: all var(--aimation-duration) ease-in;
 }
 
