@@ -99,10 +99,12 @@ h3 {
     transition: all var(--aimation-duration) ease-in-out;
     z-index: 1;
 }
-#navbar.navbar--dark{
+
+#navbar.navbar--dark {
     background-color: #2e2929;
     padding: 8px;
 }
+
 .navbar__menu {
     display: flex;
 
@@ -117,19 +119,19 @@ h3 {
     padding: 8px 12px;
     margin: 0 4px;
     cursor: pointer;
+    color: var(--color-white);
+    border: 1px solid transparent;
     border-radius: var(--size-border-radius);
 }
 
-.navbar__menu__item.active {
-    border: 1px solid var(--color-white);
-}
+
 
 .navbar__menu__item:hover {
     background-color: var(--color-dark-pink);
     border-radius: var(--size-border-radius);
 }
 
-.navbar__toggle-btn{
+.navbar__toggle-btn {
     position: absolute;
     top: 24px;
     right: 32px;
@@ -137,6 +139,7 @@ h3 {
     color: var(--color-white);
     display: none;
 }
+
 /* Home */
 
 #home {
@@ -246,7 +249,7 @@ h3 {
 
 #skills {
     background-color: var(--color-yellow);
-    
+
 }
 
 .skillset {
@@ -266,7 +269,7 @@ h3 {
     padding: 20px 40px;
 }
 
-.skill{
+.skill {
     margin-bottom: 32px;
 }
 
@@ -274,12 +277,14 @@ h3 {
     display: flex;
     justify-content: space-between;
 }
-.skill__value{
+
+.skill__value {
     /* width: 70%; <- html 에서 적용해야 다 따로 해줄수 있다. */
     height: 3px;
     background-color: var(--color-orange);
 }
-.skill__bar{
+
+.skill__bar {
     width: 100%;
     height: 3px;
     background-color: var(--color-grey);
@@ -290,39 +295,42 @@ h3 {
     flex-basis: 40%;
 }
 
-.tools{
+.tools {
     background-color: var(--color-grey);
 }
 
-.tools, .etc{
+.tools,
+.etc {
     padding: 20px;
 }
 
 /* Work */
 
-.work__categories{
+.work__categories {
     margin: 40px;
 }
-.category__btn{
+
+.category__btn {
     border: 1px solid var(--color-dark-white);
     border-radius: var(--size-border-radius);
     font-size: var(--font-regular);
     padding: 8px 48px;
 }
 
-.category__btn.active, .category__btn:hover{
+.category__btn.selected,
+.category__btn:hover {
     background-color: var(--color-pink);
     color: var(--color-white);
 }
 
-.category__btn.active .category__count,
-.category__btn:hover .category__count{
+.category__btn.selected .category__count,
+.category__btn:hover .category__count {
     opacity: 1;
     top: 0;
 }
 
-.category__count{
-    background-color:  var(--color-orange);
+.category__count {
+    background-color: var(--color-orange);
     border-radius: 50%;
     color: var(--color-white);
     width: 24px;
@@ -336,7 +344,7 @@ h3 {
     transition: all var(--aimation-duration) ease-in;
 }
 
-.work__projects{
+.work__projects {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -344,12 +352,12 @@ h3 {
     transition: all var(--aimation-duration) ease-out;
 }
 
-.work__projects.anim-out{
+.work__projects.anim-out {
     opacity: 0;
     transform: scale(0.96) translateY(40px);
 }
 
-.project{
+.project {
     position: relative;
     display: flex;
     justify-content: center;
@@ -360,16 +368,16 @@ h3 {
     background-color: var(--color-light-white);
 }
 
-.project.invisible{
+.project.invisible {
     display: none;
 }
 
-.project__img{
+.project__img {
     max-width: 100%;
     max-height: 100%;
 }
 
-.project__description{
+.project__description {
     position: absolute;
     background-color: black;
     display: flex;
@@ -384,16 +392,16 @@ h3 {
     transition: all var(--aimation-duration) ease-in;
 }
 
-.project:hover .project__description{
+.project:hover .project__description {
     opacity: 0.7;
     transform: translateY(0px);
 }
 
-.project__description h3{
+.project__description h3 {
     color: var(--color-white);
 }
 
-.project__description h3::after{
+.project__description h3::after {
     position: relative;
     left: 50%;
     margin-left: -12px;
@@ -407,71 +415,76 @@ h3 {
 
 /* Testimonial */
 
-#testmonials{
+#testmonials {
     background-color: var(--color-light-white);
 }
 
-.testimonials{
+.testimonials {
     margin: 40px;
 }
 
-.testimonial{
+.testimonial {
     display: flex;
     margin: 32px;
 }
 
-.testimonial__avata{
+.testimonial__avata {
     width: 150px;
     height: 150px;
     border-radius: 50%;
 }
 
-.testimonial__avata:nth-child(odd){
+.testimonial__avata:nth-child(odd) {
     margin-right: 40px;
 }
-.testimonial__avata:nth-child(even){
+
+.testimonial__avata:nth-child(even) {
     margin-left: 40px;
 }
-.testimonial__speech-buble{
+
+.testimonial__speech-buble {
     padding: 18px;
     background-color: var(--color-white);
     border-radius: var(--size-border-radius);
 }
 
-.testimonial__speech-buble p{
+.testimonial__speech-buble p {
     color: var(--color-light-grey);
 }
 
-.testimonial__speech-buble a{
+.testimonial__speech-buble a {
     color: var(--color-pink);
 }
 
 /* Contact */
 
-#contact{
+#contact {
     background-color: var(--color-pink);
 }
 
-.contact__title, .contact__email, .contact__rights{
-color: var(--color-white);
+.contact__title,
+.contact__email,
+.contact__rights {
+    color: var(--color-white);
 }
 
-.contact__title{
+.contact__title {
     margin: 32px 0;
 }
-.contact__links{
+
+.contact__links {
     font-size: var(--font-large);
     margin: 24px 0;
 }
 
-.contact__links i:hover{
+.contact__links i:hover {
     transform: scale(1.1);
     color: blue;
     transition: all var(--aimation-duration) ease-in;
 }
 
 /* Arrow up */
-.arrow-up{
+.arrow-up {
     position: fixed;
     bottom: 50px;
     right: 50px;
@@ -487,7 +500,7 @@ color: var(--color-white);
     transition: all 300ms ease-in;
 }
 
-.arrow-up.visible{
+.arrow-up.visible {
     opacity: 1;
     pointer-events: painted;
     /* display: block;  display:non 으로 줬을 때 그냥 디스플레이 해주기 위해 설정한것 inline 써도 상관없는듯 */
@@ -495,40 +508,40 @@ color: var(--color-white);
 }
 
 /* For below 768px screen width */
-@media screen and (max-width: 768px){
-    .navbar__toggle-btn{
+@media screen and (max-width: 768px) {
+    .navbar__toggle-btn {
         display: block;
     }
 
-    #navbar{
+    #navbar {
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .navbar__menu{
+    .navbar__menu {
         flex-direction: column;
         text-align: center;
         width: 100%;
         display: none;
     }
 
-    .about__majors{
+    .about__majors {
         flex-direction: column;
     }
 
-    .major{
+    .major {
         margin-bottom: 28px;
     }
 
-    .skillset{
+    .skillset {
         flex-direction: column;
     }
 
-    .project{
+    .project {
         flex-grow: 1;
     }
 
-    .testimonial__avata{
+    .testimonial__avata {
         width: 80px;
         height: 80px;
     }
