@@ -46,7 +46,7 @@ body {
 
 a {
     text-decoration: none;
-    color: var(--color-white);
+    color: #333333;
 }
 
 ul {
@@ -94,14 +94,14 @@ h3 {
     justify-content: space-between;
     background-color: transparent;
     align-items: center;
-    color: var(--color-white);
+    color: #333333;
     padding: 16px;
     transition: all var(--aimation-duration) ease-in-out;
     z-index: 1;
 }
 
 #navbar.navbar--dark {
-    background-color: #2e2929;
+    background-color: #eea777;
     padding: 8px;
 }
 
@@ -119,7 +119,7 @@ h3 {
     padding: 8px 12px;
     margin: 0 4px;
     cursor: pointer;
-    color: var(--color-white);
+    color: #333333;
     border: 1px solid transparent;
     border-radius: var(--size-border-radius);
 }
@@ -143,7 +143,8 @@ h3 {
 /* Home */
 
 #home {
-    background: url(./images/world_map_4-wallpaper-1920x1080.jpg) center/cover no-repeat;
+    background: url(./images/good_morning_coffee_bed_music-wallpaper-1280x720.jpg) center/cover no-repeat;
+    
     padding: 40px;
     text-align: center;
     padding: 40px;
@@ -159,7 +160,7 @@ h3 {
 
 .home__title,
 .home__description {
-    color: var(--color-white);
+    color: black;
 }
 
 .home__contact {
@@ -527,6 +528,23 @@ h3 {
     --font-micro: 12px;
     }
 
+    a {
+        text-decoration: none;
+        color: var(--color-white);
+    }
+    .navbar__menu__item {
+        padding: 8px 12px;
+        margin: 0 4px;
+        cursor: pointer;
+        color: var(--color-white);
+        border: 1px solid transparent;
+        border-radius: var(--size-border-radius);
+    }
+
+    .home__title,
+    .home__description {
+        color: var(--color-white);
+    }
 
 
     .navbar__toggle-btn {
@@ -540,6 +558,9 @@ h3 {
         flex-direction: column;
         align-items: flex-start;
         background-color: #333333;
+    }
+    #navbar i{
+        color: var(--color-white);
     }
     #navbar.navbar--dark{
         padding: 16px;
