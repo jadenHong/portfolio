@@ -225,6 +225,9 @@ h3 {
 .major__description {
     font-size: var(--font-small);
 }
+.job__logo{
+    width: 100px;
+}
 
 .job {
     display: flex;
